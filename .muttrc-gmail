@@ -1,22 +1,22 @@
 #main configuration file
 source ~/.muttrc-common
 
-#encrypted password file
+#encrypted password file: password and $my_user (gmail username)
 source "gpg -d ~/.muttgmail/passwords.gpg |"
 
 # Google remote folders 
-set imap_user = "myemail@gmail.com"
+set imap_user = "${my_user}@gmail.com"
 set spoolfile = "imaps://imap.gmail.com:993/INBOX"
 set folder = "imaps://imap.gmail.com:993"
 set trash = =[Gmail]/Trash
 set postponed = =[Gmail]/Drafts
-set header_cache = "~/.mutt/cache/headers"
-set message_cachedir = "~/.mutt/cache/bodies"
-set certificate_file = "~/.mutt/certificates"
+set header_cache = "~/.muttgmail/cache/headers"
+set message_cachedir = "~/.muttgmail/cache/bodies"
+set certificate_file = "~/.muttgmail/certificates"
 
-set from = "myemail@gmail.com"
+set from = "${my_user}@gmail.com"
 set realname = "Paulo Coelho"
-set smtp_url = "smtps://emailusername@smtp.gmail.com"
+set smtp_url = "smtps://${my_user}@smtp.gmail.com"
 set record = ""
 set smtp_authenticators = 'gssapi:login'
 set copy                = no                                           # dont store sent messages

@@ -1,11 +1,11 @@
 # default configuration file for all mails
 source ~/.muttrc-common
 
-#encrypted password file
+#encrypted password file and my_user (username)
 source "gpg -d ~/.muttusi/passwords.gpg |"
 
 # USI remote folders 
-set imap_user = "myemail@usi.ch"
+set imap_user = "${my_user}@usi.ch"
 set folder = "imaps://outlook.office365.com"
 set spoolfile = "imaps://outlook.office365.com/INBOX"
 set record = "imaps://outlook.office365.com/Sent Items"
@@ -18,9 +18,9 @@ set certificate_file = "~/.muttusi/certificates"
 set ssl_starttls=yes
 set ssl_force_tls=yes
 set ssl_use_sslv3=yes
-set from = "myemail@usi.ch"
+set from = "${my_from_user}@usi.ch"
 set realname = "Paulo Coelho"
-set smtp_url = "smtp://myemail@usi.ch@smtp.office365.com:587/"
+set smtp_url = "smtp://${my_user}@usi.ch@smtp.office365.com:587/"
 set smtp_authenticators = "login"
 
 mailboxes ='INBOX' ='Archive' ='Drafts' ='Sent Items' ='Deleted Items' ='Junk Email'
