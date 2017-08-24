@@ -1,25 +1,27 @@
-#Instructions
+# Instructions
 
-Clone into your home folder (or anywhere else + symlink to your home folder)
+## Configuration
 
-Edit .muttrc-* to your username
+* Clone into your home folder (or anywhere else + symlink to your home folder)
+* Edit .muttrc-* to your username
+* Edit .mutt*/passwords to your password and compress with gpg
+* Edit .muttgmail/.gpg.rc
 
-Edit .mutt*/passwords to your password and compress with gpg
+## More information
 
-Edit .muttgmail/.gpg.rc
-
-Check the shortcuts on .muttrc-* files
-
-See mutt-overview.pdf for more details
-
-Color configuration from:
-
-https://github.com/victorparmar/vic-config
+* Check the shortcuts on .muttrc-* files
+* See mutt-overview.pdf for more details
 
 
 ## Running
 
-mutt -F ~/.muttrc-gmail (for Gmail)
+	gmutt -F ~/.muttrc-gmail #(for Gmail)
 
-mutt -F ~/.muttrc-usi (for USI mail)
+	gmutt -F ~/.muttrc-usi #(for USI mail)
+
+
+# Credits
+
+Color configuration from:
+https://github.com/victorparmar/vic-config
 
