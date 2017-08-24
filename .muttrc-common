@@ -98,7 +98,7 @@ source $alias_file
 set sig_on_top
 
 # colors!
-source ~/.muttgmail/mutt-colors-solarized-dark-256.muttrc 
+source ~/.muttgmail/.colors.rc 
 # PGP
 source ~/.muttgmail/.gpg.rc
 # auto view
