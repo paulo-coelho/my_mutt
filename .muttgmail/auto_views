@@ -1,9 +1,3 @@
-# -*- muttrc -*-
-#
-# Tell mutt which MIME types to auto-view
-#
-# $Id: auto_views 6 2007-03-02 17:36:39Z vdanen $
-
 auto_view application/zip
 auto_view application/x-gzip
 auto_view application/x-gunzip 
