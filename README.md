@@ -15,9 +15,9 @@
 
 ## Running
 
-	gmutt -F ~/.muttrc-gmail #(for Gmail)
+	mutt -F ~/.muttrc-gmail #(for Gmail)
 
-	gmutt -F ~/.muttrc-usi #(for USI mail)
+	mutt -F ~/.muttrc-usi #(for USI mail)
 
 
 # Credits
