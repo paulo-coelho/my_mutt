@@ -1,0 +1,40 @@
+#main configuration file
+source ~/.muttrc-common
+
+#encrypted password file
+source "gpg -d ~/.muttgmail/passwords.gpg |"
+
+# Google remote folders 
+set imap_user = "myemail@gmail.com"
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+set folder = "imaps://imap.gmail.com:993"
+set trash = =[Gmail]/Trash
+set postponed = =[Gmail]/Drafts
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+set from = "myemail@gmail.com"
+set realname = "Paulo Coelho"
+set smtp_url = "smtps://emailusername@smtp.gmail.com"
+set record = ""
+set smtp_authenticators = 'gssapi:login'
+set copy                = no                                           # dont store sent messages
+mailboxes ='INBOX' ='[Gmail]/All Mail' ='[Gmail]/Drafts' ='[Gmail]/Sent Mail' ='[Gmail]/Spam' ='[Gmail]/Trash'
+
+# Gmail macros
+macro index,pager P  <purge-message> "Purge message"
+macro index,pager U  <set-flag>O	"Mark as read"
+macro index,pager I  <clear-flag>O	"Mark as unread"
+macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>"	"Go to all mail"
+macro index,pager gs <change-folder>=[Gmail]/Starred<enter>	"Go to 'Starred'"
+macro index,pager gd <change-folder>=[Gmail]/Drafts<enter>	"Go to 'Drafts'"
+macro index,pager gl <change-folder>?				"Go to 'Label'"
+macro index,pager gi <change-folder>=INBOX<enter> 		"Go to inbox"
+macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>"	"Go to 'Sent Mail'"
+macro index,pager +  <save-message>=[Gmail]/Important<enter> "Mark as important"
+macro index,pager !  <save-message>=[Gmail]/Spam<enter> "Report spam"
+macro index,pager e  "<save-message>=[Gmail]/All Mail<enter>" "Archive conversation"
+
+set sig_on_top
+set signature           = ~/.muttgmail/signature

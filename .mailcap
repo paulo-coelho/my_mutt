@@ -1,0 +1,32 @@
+# HTML
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+#text/html;                      links %s; nametemplate=%s.html
+#text/html;                      links -dump %s; nametemplate=%s.html; copiousoutput
+
+# MS Excel
+application/x-msexcel; /Users/paulo/.mutt/view_attachment.sh %s
+application/ms-exc; /Users/paulo/.mutt/view_attachment.sh %s
+application/excel; /Users/paulo/.mutt/view_attachment.sh %s
+application/msexcel; /Users/paulo/.mutt/view_attachment.sh %s
+application/vnd.ms-exc; /Users/paulo/.mutt/view_attachment.sh %s
+application/vnd.ms-excel; /Users/paulo/.mutt/view_attachment.sh %s
+
+# MS Word
+application/msword; /Users/paulo/.mutt/view_attachment.sh %s
+application/x-msword; /Users/paulo/.mutt/view_attachment.sh %s
+application/word; /Users/paulo/.mutt/view_attachment.sh %s
+application/msword; /Users/paulo/.mutt/view_attachment.sh %s
+application/vnd.ms-word; /Users/paulo/.mutt/view_attachment.sh %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; /Users/paulo/.mutt/view_attachment.sh %s
+
+# Images
+image/jpeg; /Users/paulo/.mutt/view_attachment.sh %s
+image/pjpeg; /Users/paulo/.mutt/view_attachment.sh %s
+image/png; /Users/paulo/.mutt/view_attachment.sh %s
+image/gif; /Users/paulo/.mutt/view_attachment.sh %s
+
+# PDF
+application/pdf; /Users/paulo/.mutt/view_attachment.sh %s pdf
+
+# Unidentified.
+application/octet-stream; /Users/paulo/.mutt/view_attachment.sh %s "-" 
