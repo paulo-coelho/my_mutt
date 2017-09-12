@@ -4,7 +4,7 @@
 
 * Clone into your home folder (or anywhere else + symlink to your home folder)
 * Edit .muttrc-* to your username
-* Edit .mutt*/passwords to your password and compress with gpg
+* Edit .mutt*/passwords to your password and encrypt with gpg
 * Edit .muttgmail/.gpg.rc
 
 ## More information
