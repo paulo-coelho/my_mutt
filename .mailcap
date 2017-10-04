@@ -4,20 +4,21 @@ text/html; w3m -I %{charset} -T text/html; copiousoutput;
 #text/html;                      links -dump %s; nametemplate=%s.html; copiousoutput
 
 # MS Excel
-application/x-msexcel; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/ms-exc; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/excel; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/msexcel; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/vnd.ms-exc; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/vnd.ms-excel; /Users/paulo/.muttgmail/view_attachment.sh %s
+application/x-msexcel; /Users/paulo/.muttgmail/view_attachment.sh %s xlsx
+application/ms-exc; /Users/paulo/.muttgmail/view_attachment.sh %s xls
+application/excel; /Users/paulo/.muttgmail/view_attachment.sh %s xls
+application/msexcel; /Users/paulo/.muttgmail/view_attachment.sh %s xls
+application/vnd.ms-exc; /Users/paulo/.muttgmail/view_attachment.sh %s xls
+application/vnd.ms-excel; /Users/paulo/.muttgmail/view_attachment.sh %s xls
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; /Users/paulo/.muttgmail/view_attachment.sh %s xlsx
 
 # MS Word
-application/msword; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/x-msword; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/word; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/msword; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/vnd.ms-word; /Users/paulo/.muttgmail/view_attachment.sh %s
-application/vnd.openxmlformats-officedocument.wordprocessingml.document; /Users/paulo/.muttgmail/view_attachment.sh %s
+application/msword; /Users/paulo/.muttgmail/view_attachment.sh %s doc
+application/x-msword; /Users/paulo/.muttgmail/view_attachment.sh %s docx
+application/word; /Users/paulo/.muttgmail/view_attachment.sh %s doc
+application/msword; /Users/paulo/.muttgmail/view_attachment.sh %s doc
+application/vnd.ms-word; /Users/paulo/.muttgmail/view_attachment.sh %s doc
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; /Users/paulo/.muttgmail/view_attachment.sh %s docx
 
 # Images
 image/jpeg; /Users/paulo/.muttgmail/view_attachment.sh %s
@@ -29,4 +30,4 @@ image/gif; /Users/paulo/.muttgmail/view_attachment.sh %s
 application/pdf; /Users/paulo/.muttgmail/view_attachment.sh %s pdf
 
 # Unidentified.
-application/octet-stream; /Users/paulo/.muttgmail/view_attachment.sh %s "-" 
+application/octet-stream; /Users/paulo/.muttgmail/view_attachment.sh %s "-"
