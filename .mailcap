@@ -20,6 +20,12 @@ application/msword; /Users/paulo/.muttgmail/view_attachment.sh %s doc
 application/vnd.ms-word; /Users/paulo/.muttgmail/view_attachment.sh %s doc
 application/vnd.openxmlformats-officedocument.wordprocessingml.document; /Users/paulo/.muttgmail/view_attachment.sh %s docx
 
+#MS PowerPoint
+application/vnd.ms-powerpoint; /Users/paulo/.muttgmail/view_attachment.sh %s ppt
+application/vnd.openxmlformats-officedocument.presentationml.presentation; /Users/paulo/.muttgmail/view_attachment.sh %s pptx
+application/vnd.openxmlformats-officedocument.presentationml.template; /Users/paulo/.muttgmail/view_attachment.sh %s potx
+application/vnd.openxmlformats-officedocument.presentationml.slideshow; /Users/paulo/.muttgmail/view_attachment.sh %s ppsx
+
 # Images
 image/jpeg; /Users/paulo/.muttgmail/view_attachment.sh %s
 image/pjpeg; /Users/paulo/.muttgmail/view_attachment.sh %s
