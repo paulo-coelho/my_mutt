@@ -24,8 +24,6 @@ mailboxes ='INBOX' ='[Gmail]/All Mail' ='[Gmail]/Drafts' ='[Gmail]/Sent Mail' ='
 
 # Gmail macros
 macro index,pager P  <purge-message> "Purge message"
-macro index,pager U  <set-flag>O	"Mark as read"
-macro index,pager I  <clear-flag>O	"Mark as unread"
 macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>"	"Go to all mail"
 macro index,pager gs <change-folder>=[Gmail]/Starred<enter>	"Go to 'Starred'"
 macro index,pager gd <change-folder>=[Gmail]/Drafts<enter>	"Go to 'Drafts'"

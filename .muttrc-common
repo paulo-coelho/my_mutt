@@ -73,6 +73,8 @@ bind  index,pager a  group-reply	                               # Reply all
 #bind  index,pager \# delete-thread	                               # Delete
 bind  index,pager l  copy-message	                               # Label
 bind  index,pager m  save-message	                               # Move to
+macro index,pager I  <clear-flag>O	"Mark as read"
+macro index,pager U  <set-flag>O	"Mark as unread"
 
 
 bind index        L   noop

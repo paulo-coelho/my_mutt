@@ -26,8 +26,6 @@ set smtp_authenticators = "login"
 mailboxes ='INBOX' ='Archive' ='Drafts' ='Sent Items' ='Deleted Items' ='Junk Email'
 
 # USI macros
-macro index,pager I  <set-flag>O	"Mark as read"
-macro index,pager U  <clear-flag>O	"Mark as unread"
 macro index,pager ga <change-folder>=Archive<enter>	"Go to 'Archive'"
 macro index,pager gd <change-folder>=Drafts<enter>	"Go to 'Drafts'"
 macro index,pager gl <change-folder>?				"Go to 'Label'"
