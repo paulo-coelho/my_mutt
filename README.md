@@ -5,7 +5,8 @@
 * Clone into your home folder (or anywhere else + symlink to your home folder)
 * Edit .muttrc-* to your username
 * Edit .mutt*/passwords to your password and encrypt with gpg
-* Edit .muttgmail/.gpg.rc
+* Edit .muttgmail/.gpg.rc to your own key id
+* Change the paths in .mailcap
 
 ## More information
 
