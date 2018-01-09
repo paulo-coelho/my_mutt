@@ -1,0 +1,38 @@
+# default configuration file
+source ~/.muttrc-common
+
+#encrypted password file and my_user
+source "gpg -d ~/.muttufu/passwords.gpg |"
+
+# USI remote folders 
+set imap_user = "${my_user}@ufu.br"
+set folder = "imaps://imap.ufu.br"
+set spoolfile = "imaps://imap.ufu.br/INBOX"
+set record = "imaps://imap.ufu.br/Sent"
+set postponed = "imaps://imap.ufu.br/Drafts"
+set trash = "imaps://imap.ufu.br/Trash"
+set header_cache = "~/.muttufu/cache/headers"
+set message_cachedir = "~/.muttufu/cache/bodies"
+set certificate_file = "~/.muttufu/certificates"
+
+set ssl_starttls=yes
+set ssl_force_tls=yes
+set ssl_use_sslv3=yes
+set from = "${my_user}@ufu.br"
+set realname = "Paulo Coelho"
+set smtp_url = "smtp://${my_user}@ufu.br@smtp.ufu.br:587/"
+set smtp_authenticators = "login"
+
+mailboxes ='INBOX' ='Archive' ='Drafts' ='Sent' ='Trash' ='Junk'
+
+# UFU macros
+macro index,pager ga <change-folder>=Archive<enter>	"Go to 'Archive'"
+macro index,pager gd <change-folder>=Drafts<enter>	"Go to 'Drafts'"
+macro index,pager gl <change-folder>?				"Go to 'Label'"
+macro index,pager gi <change-folder>=INBOX<enter> 		"Go to inbox"
+macro index,pager gt "<change-folder>=Sent<enter>"	"Go to 'Sent Items'"
+macro index,pager !  "<save-message>=Junk<enter>" "Report spam"
+macro index,pager e  "<save-message>=Archive<enter>" "Archive conversation"
+
+set signature           = ~/.muttufu/signature
+
