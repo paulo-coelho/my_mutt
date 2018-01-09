@@ -13,12 +13,13 @@
 * Check the shortcuts on .muttrc-* files
 * See mutt-overview.pdf for more details
 
-
 ## Running
 
 	mutt -F ~/.muttrc-gmail #(for Gmail)
 
 	mutt -F ~/.muttrc-usi #(for USI mail)
+
+	mutt -F ~/.muttrc-ufu #(for UFU mail)
 
 
 # Credits
