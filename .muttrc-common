@@ -90,12 +90,17 @@ macro index       LL  <limit>all<enter>  "Reset disply limit to all mail"
 macro index,pager \cb ": set pipe_decode\n|w3m\n: unset pipe_decode\n" "call w3m to extract URLs out of a message" 
 macro attach,pager \cu <pipe-entry>'cat > /tmp/mutt_mail.html; open /tmp/mutt_mail.html'<enter> 'open email in safari'
 
-# Contact aliases, could also use `goobook`.
-set alias_file		= ~/.muttgmail/aliases
-set sort_alias		= alias
-set reverse_alias	= yes
-set reverse_name	= yes
-source $alias_file
+# Contact aliases, could also use `goobook` (see below).
+#set alias_file		= ~/.muttgmail/aliases
+#set sort_alias		= alias
+#set reverse_alias	= yes
+#set reverse_name	= yes
+#source $alias_file
+
+# goobook settings
+set query_command="goobook query '%s'"
+bind editor <Tab> complete-query
+macro index,pager A "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
 
 set sig_on_top
 
