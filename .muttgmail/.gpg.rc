@@ -1,5 +1,5 @@
 set pgp_use_gpg_agent=yes
-set pgp_sign_as=CE341D36
+set pgp_default_key=CE341D36
 set pgp_timeout=600
 set crypt_replysignencrypted=yes
 

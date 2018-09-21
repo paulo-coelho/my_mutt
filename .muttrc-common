@@ -90,6 +90,8 @@ macro index       LL  <limit>all<enter>  "Reset disply limit to all mail"
 macro index,pager \cb ": set pipe_decode\n|w3m\n: unset pipe_decode\n" "call w3m to extract URLs out of a message" 
 macro attach,pager \cu <pipe-entry>'cat > /tmp/mutt_mail.html; open /tmp/mutt_mail.html'<enter> 'open email in safari'
 
+macro index,pager \X ": unset pipe_decode\n|ripmime -i - -d ~/tmp/mutt_attach/ \n: set pipe_decode\n" "call w3m to extract URLs out of a message" 
+
 # Contact aliases, could also use `goobook` (see below).
 #set alias_file		= ~/.muttgmail/aliases
 #set sort_alias		= alias
