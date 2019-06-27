@@ -23,7 +23,7 @@ set realname = "Paulo Coelho"
 set smtp_url = "smtp://${my_user}@ufu.br@smtp.ufu.br:587/"
 set smtp_authenticators = "login"
 
-mailboxes ='INBOX' ='Archive' ='Drafts' ='Sent' ='Trash' ='Junk'
+mailboxes ='INBOX' ='Archive' ='Archive.DIRPS' ='Drafts' ='Sent' ='Trash' ='Junk'
 
 # UFU macros
 macro index,pager ga <change-folder>=Archive<enter>	"Go to 'Archive'"

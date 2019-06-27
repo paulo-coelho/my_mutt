@@ -16,7 +16,7 @@ set certificate_file = "~/.muttgmail/certificates"
 
 set from = "${my_user}@gmail.com"
 set realname = "Paulo Coelho"
-set smtp_url = "smtps://${my_user}@smtp.gmail.com"
+set smtp_url = "smtp://${my_user}@smtp.gmail.com:587/"
 set record = ""
 set smtp_authenticators = 'gssapi:login'
 set copy                = no                                           # dont store sent messages

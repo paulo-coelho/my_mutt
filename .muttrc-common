@@ -1,7 +1,7 @@
-set imap_keepalive = 10
+set imap_keepalive = 60
 set imap_idle = yes
-set timeout = 10                                           # idle time before scanning
-set mail_check = 10                                           # minimum time between scans
+set timeout = 60                                           # idle time before scanning
+set mail_check = 60                                           # minimum time between scans
 
 set sort = threads
 set sort_aux = date
@@ -90,7 +90,7 @@ macro index       LL  <limit>all<enter>  "Reset disply limit to all mail"
 macro index,pager \cb ": set pipe_decode\n|w3m\n: unset pipe_decode\n" "call w3m to extract URLs out of a message" 
 macro attach,pager \cu <pipe-entry>'cat > /tmp/mutt_mail.html; open /tmp/mutt_mail.html'<enter> 'open email in safari'
 
-macro index,pager \X ": unset pipe_decode\n|ripmime -i - -d ~/tmp/mutt_attach/ \n: set pipe_decode\n" "call w3m to extract URLs out of a message" 
+macro index,pager \X ": unset pipe_decode\n|ripmime -i - -d ~/tmp/mutt_attach/ \n: set pipe_decode\n" "download all attachments" 
 
 # Contact aliases, could also use `goobook` (see below).
 #set alias_file		= ~/.muttgmail/aliases

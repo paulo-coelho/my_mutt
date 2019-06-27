@@ -33,7 +33,12 @@ image/png; /Users/paulo/.muttgmail/view_attachment.sh %s
 image/gif; /Users/paulo/.muttgmail/view_attachment.sh %s
 
 # PDF
-application/pdf; /Users/paulo/.muttgmail/view_attachment.sh %s pdf
+application/pdf; /users/paulo/.muttgmail/view_attachment.sh %s pdf
+
+# Pages, Number, Keynote
+application/x-iwork-pages-sffpages; /users/paulo/.muttgmail/view_attachment.sh %s pages
+application/x-iwork-pages-sffkey; /users/paulo/.muttgmail/view_attachment.sh %s key
+application/x-iwork-pages-sffnumbers; /users/paulo/.muttgmail/view_attachment.sh %s numbers
 
 # Unidentified.
 application/octet-stream; /Users/paulo/.muttgmail/view_attachment.sh %s "-"

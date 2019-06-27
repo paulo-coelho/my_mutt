@@ -22,6 +22,7 @@ set from = "${my_from_user}@usi.ch"
 set realname = "Paulo Coelho"
 set smtp_url = "smtp://${my_user}@usi.ch@smtp.office365.com:587/"
 set smtp_authenticators = "login"
+set copy                = no                                           # dont store sent messages
 
 mailboxes ='INBOX' ='Archive' ='Drafts' ='Sent Items' ='Deleted Items' ='Junk Email'
 
